@@ -29,6 +29,20 @@ systemctl enable mongod
 ```
 systemctl start mongod
 ```
+```
+systemctl status mongod
+```
+
+```
+ps -ef | grep mongod
+```
+
+```
+netstat -lntp
+```
+
+Local Host:mongodb port is --> 127.0.0.1:27017
+
 
 Usually MongoDB opens the port only to localhost(127.0.0.1), meaning this service can be accessed by the application that is hosted on this server only. However, we need to access this service to be accessed by another server(remote server), So we need to change the config accordingly.
 

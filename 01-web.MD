@@ -82,3 +82,15 @@ Restart Nginx Service to load the changes of the configuration.
 ``` 
 systemctl restart nginx 
 ```
+
+```
+ ps -ef | grep nginx
+```
+
+```
+netstat -lntp
+```
+
+```
+telnet catalogue.dawsmani.site 8080
+```

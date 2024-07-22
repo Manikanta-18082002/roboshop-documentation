@@ -57,10 +57,18 @@ Every application is developed by development team will have some common softwar
 Lets download the dependencies.
 
 ```
+ls -l
+```
+
+```
 cd /app
 ```
 ```
 npm install 
+```
+
+```
+ls -l
 ```
 
 We need to setup a new service in systemd so systemctl can manage this service
@@ -101,6 +109,9 @@ systemctl enable catalogue
 systemctl start catalogue
 ```
 
+```
+systemctl status catalogue
+```
 * For the application to work fully functional we need to load schema to the Database.
 * Schemas are usually part of application code and developer will provide them as part of development.
 
@@ -131,4 +142,21 @@ Load Schema
 mongosh --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
 ```
 
+```
+systemctl status catalogue
+```
+
+```
+ps -ef | grep node
+```
+
+```
+ netstat -lntp
+ ```
+
+ ```
+ telnet mongodb.dawsmani.site 27017
+ ```
+
+ 
 **NOTE: You need to update catalogue server ip address in frontend configuration. Configuration file is /etc/nginx/default.d/roboshop.conf**
