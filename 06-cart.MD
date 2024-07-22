@@ -91,3 +91,11 @@ systemctl enable cart
 ```
 systemctl start cart
 ```
+
+```
+systemctl status user
+```
+
+```
+netstat -lntp
+```
